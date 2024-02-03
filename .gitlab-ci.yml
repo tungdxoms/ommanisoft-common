@@ -1,0 +1,6 @@
+deploy:
+  image: maven:3.8.6-jdk-11
+  script:
+    - 'mvn deploy -s settings.xml'
+#  rules:
+#    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
